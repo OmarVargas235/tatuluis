@@ -1,0 +1,186 @@
+.theme {
+	background-color: #181818;
+	color: white;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: #929292;
+	}
+
+	.card {
+		border: none;
+	}
+
+	.header__text {
+		color: white ;
+	}
+
+	svg {
+		fill: #CCCCCC;
+	}
+
+	/***************badge del banner***************/
+	.badge {
+		border: 2px solid #121212;
+	}
+
+	.badge-exclusive {
+		background-color: #121212;
+		color: #929292;
+	}
+
+	/***************galleria del banner***************/
+
+	.gallery__text {
+		color: #B06AD4;
+	}
+	
+	.icon-instagram {
+		svg {
+			fill: #B06AD4;
+		}
+	}
+
+	/***************Porque tatuarse con nosotros***************/
+
+	.about-us {
+		background-color: #121212;
+	}
+
+	.about-us__grid-item {
+		background-color: #181818;
+
+		svg {
+			fill: white;
+		}
+
+		&:hover {
+			background-color: #D37DFF;
+
+			svg {
+				fill: #000000;
+			}
+
+			h2, p {
+				color: #000000;
+			}
+		}
+	}
+
+	/***************Sobre Tatuluis***************/
+	.icons {
+		svg {
+			&:hover {
+				fill: #D37DFF;
+			}
+		}
+	}
+
+	.content-parallax {
+		p {
+			color: white;
+		}
+
+		svg {
+			fill: white;
+		}
+	}
+
+	/***************Que Opinan Nuestros Clientes***************/
+	.contact-us {
+		background-color: #121212;
+	}
+
+	.footer__text {
+		color: #D37DFF;
+	}
+
+	/***************Icono de whatsapp***************/
+	.icon-whatsapp {
+		background-color: #121212;
+	}
+
+	/***************Modal de whatsapp***************/
+	.icon-whatsapps {
+	
+		p {
+			color: white;
+		}
+
+		.card-header, .card-footer {
+			background-color: #2A2F32;
+		}
+
+		.card-header {
+			svg {
+				fill: #5D6062;
+			}
+		}
+
+		.card-body {
+			
+			.message {
+				background-color: #262D31;
+			}
+
+			svg {
+				fill: #262D31;
+			}
+		}
+
+		.card-footer {
+			border-radius: 0 0 calc(.8rem - 1px) calc(.8rem - 1px);
+		}
+
+		.btn-light {
+			color: white;
+			background-color: #00AF9C;
+			border: none;
+
+			svg {
+				fill: white;
+			}
+
+			&:hover, &:focus {
+				color: white;
+				background-color: #00D0B9;
+	  			box-shadow: none;	
+			}
+		}
+		
+	}
+	.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+		color: white;
+		background-color: #00AF9C !important;
+		box-shadow: none !important;
+	}
+
+	/***************Navbar***************/
+	.navbar {
+		background-color: #202020;
+		box-shadow: none;
+
+	}
+	.navbar-brand {
+		fill: #FFFFFF;
+	}
+
+	.navbar-nav {
+		background-color: #121212;
+		
+		.nav-link {
+			color: #AAAAAA !important;
+		}
+	}	
+
+	/***************Media Query***************/
+	
+	@media (min-width: 992px) {
+		.navbar-nav {
+			background-color: #202020;
+		}
+	}
+}

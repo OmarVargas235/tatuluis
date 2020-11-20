@@ -1,0 +1,151 @@
+.icon-whatsapp {
+	z-index: 2;
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	width: 64px;
+	height: 64px;
+	background-color: white;
+	box-shadow: 0 3px 12px rgba(0,0,0,.15);
+	cursor: pointer;
+
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+	
+	&::before {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #4FCE5D;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+}
+
+.icon-whatsapps {
+	position: fixed;
+	z-index: 1;
+	right: 30px;
+	bottom: 40px;
+	padding: 0 !important;
+	width: 343px !important;
+	box-shadow: 0 3px 12px rgba(0,0,0,.15);
+
+	.card {
+		border-radius: calc(.8rem - 1px);
+		border: none;
+		
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: white;
+		}
+	}
+
+	.card-header {
+		background-color: #095E54;
+		position: relative;
+		color: white;
+		border-radius: calc(.8rem - 1px) calc(.8rem - 1px) 0 0 !important;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-color: #4FCE5D;
+			border-radius: 50%;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+		
+		svg {
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+			fill: rgba(0, 0, 0, .5);
+			transition: fill .3s;
+
+			&:hover {
+				fill: rgba(0, 0, 0, .8);
+			}
+		}
+	}
+
+	.img-body-light {
+		background-image: url('../img/bg-whatssap.png');	
+	}
+
+	.img-body-dark {
+		background-image: url('../img/bg-whatssap-dark.png');	
+	}
+
+	.card-body {
+		background-size: cover;
+		height: 170px;
+		position: relative;
+
+		svg {
+			position: absolute;
+			left: 10px;
+		}
+	}
+
+	.message {
+		background-color: white;
+		border-radius: 10px;
+		border-top-left-radius: 0;
+	}
+	
+	.message__name {
+		color: #9F9F9F;
+		font-size: .9rem;
+	}
+
+	.btn {
+		border-radius: 20px;
+	}
+
+	.btn-light {
+		color: #777777;
+		background-color: #EFEFEF;
+
+		svg {
+			fill: #777777;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	
+	.icon-whatsapps {
+		right: calc(50% - 172px);
+	}
+}
+
+@media (max-width: 360px) {
+	
+	.icon-whatsapps {
+		width: 300px !important;
+		right: calc(50% - 150px);
+
+		.card-header {
+			font-size: .9rem;
+		}
+
+		.card-body, .message {
+			padding-left: 15px !important; 
+			padding-right: 15px !important;
+
+			svg {
+				left: 0px;
+			}
+		}
+	}
+}

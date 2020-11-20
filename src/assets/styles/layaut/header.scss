@@ -1,0 +1,57 @@
+.header {
+	position: relative;
+	color: white;
+	height: 460px;
+	background-color: rgba(0,0,0, .3);
+
+	.badge {
+		font-size: 1rem;
+		font-weight: normal;
+		padding: .5rem .7rem;
+		border-radius: 0;
+		border: 2px solid white;
+	}
+
+	.badge-exclusive {
+		background-color: white;
+		color: black;
+	}
+}
+
+.header__title {
+	font-size: 4.1vh;
+	max-width: 15.25rem;
+}
+
+.header__text {
+	font-size: 2.5vh;
+	max-width: 18.25rem;
+}
+
+.header__footer {
+	height: 15%;
+}
+
+.header__btn {
+	cursor: pointer;
+}
+
+@media (max-height: 450px) {
+	.header__title {
+		font-size: 4.1vw;
+	}
+	
+	.header__text {
+		font-size: 2.5vw;
+	}
+}
+
+@media (min-width: 992px) {
+	.header__title {
+		max-width: 35.9375rem;
+	}
+	
+	.header__text {
+		max-width: 31.25rem;
+	}
+}

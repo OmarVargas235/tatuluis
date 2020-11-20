@@ -1,0 +1,52 @@
+.modal {
+	svg {
+		cursor: pointer;
+		fill: #C6C6C6;
+		width: 18px;
+		transition: fill .1s;
+
+		&:hover {
+			fill: white;
+		}
+	}
+
+	.modal-dialog {
+		max-width: 100%;
+	}
+
+	.modal-content {
+		background-color: transparent;
+		border: none;
+	}
+}
+
+.modal-footer {
+	border: none;
+	background-color: rgba(0, 0, 0, .6);
+	color: white;
+	font-size: 13px;
+	border-radius: 0 !important;
+}
+
+.modal-header {
+	background-color: rgba(0, 0, 0, .6);
+	color: #C6C6C6;
+	border-radius: 0 !important;
+}
+
+.arrow {
+	span {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		background-color: rgba(0, 0, 0, .6);
+
+		&:hover svg {
+			fill: white;
+		}
+	}
+}
+
+.modal_footer__text {
+	max-width: 420px;
+}

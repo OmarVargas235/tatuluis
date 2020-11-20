@@ -1,0 +1,21 @@
+.card-columns {
+	grid-column-gap: .7rem !important;
+}
+
+@media (min-width: 320px) {
+	.card-columns {
+		column-count: 1;
+	}
+}
+
+@media (min-width: 400px) {
+	.card-columns {
+		column-count: 2;
+	}
+}
+
+@media (min-width: 992px) {
+	.card-columns {
+		column-count: 4 !important;
+	}
+}

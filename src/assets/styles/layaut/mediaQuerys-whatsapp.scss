@@ -1,0 +1,27 @@
+@media (max-width: 425px) {
+	
+	.container_modal_whatsapp {
+		right: calc(50% - 172px);
+	}
+}
+
+@media (max-width: 360px) {
+	
+	.container_modal_whatsapp {
+		width: 300px !important;
+		right: calc(50% - 150px);
+
+		.card-header {
+			font-size: .9rem;
+		}
+
+		.card-body, .message {
+			padding-left: 15px !important; 
+			padding-right: 15px !important;
+
+			svg {
+				left: 0px;
+			}
+		}
+	}
+}

@@ -8,9 +8,7 @@
 }
 
 .about-us__grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr;
+  @include grid_basic(10px, 1fr);
 }
 
 .about-us__grid-item {
@@ -26,9 +24,7 @@
 
 @media (min-width: 768px) {
   .about-us__grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    @include grid_basic(10px, repeat(4, 1fr));
   }
 
   .about-us__grid-item-1 {
@@ -49,4 +45,3 @@
     grid-column: 2 / 5;
   }
 }
-

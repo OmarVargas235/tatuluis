@@ -1,10 +1,9 @@
 import React from 'react';
+import Address from './Address';
+import Telephone from './Telephone';
+import Email from './Email';
+import HourHand from './HourHand';
 import Plat from './Map';
-
-import { ReactComponent as Marker } from '../../assets/iconos/marker.svg';
-import { ReactComponent as Phone } from '../../assets/iconos/phone.svg';
-import { ReactComponent as Email } from '../../assets/iconos/email.svg';
-import { ReactComponent as Clock } from '../../assets/iconos/clock.svg';
 
 const ContactUs = () => {
 	
@@ -17,41 +16,14 @@ const ContactUs = () => {
 					
 					<div className="row no-gutters mt-5">
 						<div className="col-12 col-sm-6 px-5 px-sm-0">
-							<div className="mb-5">
-								<div className="mb-1 d-flex align-items-center">
-									<Marker />
-									<span className="font-weight-bold h5 ml-3 mb-0">Dirección</span>
-								</div>
-								
-								<p>Sm 15-a Manzana 03 Lote 03 Local 17 Av. Acanceh</p>
-							</div>
+
+							<Address />
 					
-							<div className="mb-5">
-								<div className="mb-1 d-flex align-items-center">
-									<Phone />
-									<span className="font-weight-bold h5 ml-3 mb-0">Teléfono</span>
-								</div>
-								
-								<p>+52 998 505 14 03</p>
-							</div>
-					
-							<div className="mb-5">
-								<div className="mb-1 d-flex align-items-center">
-									<Email />
-									<span className="font-weight-bold h5 ml-3 mb-0">Email</span>
-								</div>
-								
-								<p>tatuluis.tl@gmail.com</p>
-							</div>
-					
-							<div className="mb-5">
-								<div className="mb-1 d-flex align-items-center">
-									<Clock />
-									<span className="font-weight-bold h5 ml-3 mb-0">Horario</span>
-								</div>
-								
-								<p>Lunes a Sábado de 10:00am a 8:00pm (con cita).</p>
-							</div>
+							<Telephone />
+							
+							<Email />
+										
+							<HourHand />
 						</div>
 					
 						<div className="col-12 col-sm-6 px-2">

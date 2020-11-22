@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ReactComponent as Stroke } from '../../assets/img/trazo.svg';
 import { StateThemeContext } from '../../context/ChangeThemeContext';
+import { setTime } from '../../utils/helper';
 
 const BodyWhatsapp = () => {
 
@@ -13,7 +14,7 @@ const BodyWhatsapp = () => {
 			<div className="message px-4 py-2">
 				<p className="mb-0 message__name">Tatuluis Tattoo Studio</p>
 				<p className="mb-0">Hola! Bienvenido a tatuluis.com cuentanos esa idea genial que tienes en mente.</p>
-				<p className="mb-0">{new Date().getHours()}:{new Date().getMinutes()} p. m.</p>	
+				<p className="mb-0">{ setTime() }</p>	
 			</div>
 		</div> 
 	)

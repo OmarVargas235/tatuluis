@@ -2,7 +2,7 @@ import React from 'react';
 import img from '../../assets/img/apple-touch-icon.png';
 import { ReactComponent as Close } from '../../assets/iconos/close.svg';
 
-const HeaderWhatsapp = ({ setOpen, setCloseInit }) => (
+const HeaderWhatsapp = ({ setOpen }) => (
 
 	<div className="card-header">
 		<div className="row">
@@ -16,7 +16,7 @@ const HeaderWhatsapp = ({ setOpen, setCloseInit }) => (
 			</div>
 
 			<div className="col-2 text-right">
-				<Close onClick={() => { setOpen(false); setCloseInit(false) }} />
+				<Close onClick={() => setOpen(false) } />
 			</div>
 		</div>
 	</div>

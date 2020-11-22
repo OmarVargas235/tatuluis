@@ -1,0 +1,27 @@
+.card {
+	border-radius: calc(.8rem - 1px);
+	border: none;
+}
+
+.card-header {
+	background-color: #095E54;
+	position: relative;
+	color: white;
+	border-radius: calc(.8rem - 1px) calc(.8rem - 1px) 0 0 !important;
+
+	&::after {
+		content: '';
+		display: block;
+		background-color: #4FCE5D;
+		border-radius: 50%;
+		top: 50px;
+		left: 60px;
+		@include btn_whatsapp-positions(absolute, 1, null, null, 10px, 10px, none);
+	}
+}
+
+.card-body {
+	background-size: cover;
+	height: 170px;
+	position: relative;
+}

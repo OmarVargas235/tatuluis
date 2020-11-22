@@ -1,15 +1,17 @@
+@import './utilities/place_holder.scss';
+@import './utilities/mixins.scss';
+
+@import './views/header.scss';
+@import './views/navbar.scss';
+@import './views/hero.scss';
+@import './views/gallery.scss';
+@import './views/aboutUs.scss';
+@import './views/aboutTatuluis.scss';
+@import './views/clients_say_page.scss';
+@import './views/contactUs.scss';
+@import './views/whatsapps.scss';
+
 @import './components/overlay.scss';
-@import './layaut/header.scss';
-@import './layaut/navbar.scss';
-@import './layaut/hero.scss';
-@import './layaut/card-columns.scss';
-@import './layaut/gallery.scss';
-@import './layaut/modal.scss';
-@import './layaut/aboutUs.scss';
-@import './layaut/aboutTatuluis.scss';
-@import './layaut/clients_say_page.scss';
-@import './layaut/contactUs.scss';
-@import './layaut/whatsapps.scss';
 @import './theme/theme.scss';
 
 html {

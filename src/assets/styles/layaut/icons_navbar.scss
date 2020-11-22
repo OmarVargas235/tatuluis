@@ -1,0 +1,22 @@
+.navbar {
+	.bars_close {
+		cursor: pointer;
+	}
+
+	svg {
+		transition: fill .5s;
+	}
+}
+
+.menuActive {
+	background-color: #F6F6F6;
+	box-shadow: 0 1px 1px #D6D6D6;
+
+	.btn {
+		color: black !important;
+	}
+
+	svg {
+		fill: black;
+	}
+}

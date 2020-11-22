@@ -1,3 +1,6 @@
+@import './layaut/card-columns.scss';
+@import './layaut/modal.scss';
+
 .gallery {
 	img {
 		transition: transform .3s;
@@ -21,11 +24,10 @@
 }
 
 .icon-instagram {
-	position: absolute;
+	@include postions(absolute, null, 30px);
 	bottom: 5%;
 	right: 5%;
 	background-color: white;
-	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	box-shadow: 0 0 5px rgba(0,0,0,.2);

@@ -1,0 +1,43 @@
+.btn-icon-whatsapp {
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.container_modal_whatsapp {
+	.card {
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: white;
+		}
+	}
+
+	.card-header {
+		svg {
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+			fill: rgba(0, 0, 0, .5);
+			transition: fill .3s;
+
+			&:hover {
+				fill: rgba(0, 0, 0, .8);
+			}
+		}
+	}
+
+	.card-body {
+		svg {
+			position: absolute;
+			left: 10px;
+		}
+	}
+
+	.btn-light {
+		svg {
+			fill: #777777;
+		}
+	}
+}

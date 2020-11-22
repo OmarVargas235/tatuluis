@@ -1,0 +1,53 @@
+@import '../layaut/svg_btn-whatsapp.scss';
+
+.btn-icon-whatsapp {
+	background-color: white;
+	cursor: pointer;
+	@include btn_whatsapp-positions(fixed, 3, 20px, 15px, 64px, 64px, 0 3px 12px rgba(0,0,0,.15));
+	
+	&::before {
+		content: '';
+		display: block;
+		border-radius: 50%;
+		background-color: #4FCE5D;
+		top: 5px;
+		@include btn_whatsapp-positions(absolute, 1, 5px, null, 10px, 10px, none);
+	}
+}
+
+.container_modal_whatsapp {
+	padding: 0 !important;
+	@include btn_whatsapp-positions(fixed, 2, 30px, 40px, 343px !important, null, 0 3px 12px rgba(0,0,0,.15));
+
+	.img-body-light {
+		background-image: url('../img/bg-whatssap.png');	
+	}
+
+	.img-body-dark {
+		background-image: url('../img/bg-whatssap-dark.png');	
+	}
+
+	.message {
+		background-color: white;
+		border-radius: 10px;
+		border-top-left-radius: 0;
+	}
+	
+	.message__name {
+		color: #9F9F9F;
+		font-size: .9rem;
+	}
+
+	.btn {
+		border-radius: 20px;
+	}
+
+	.btn-light {
+		color: #777777;
+		background-color: #EFEFEF;
+	}
+
+	@import '../layaut/card_whatsapp.scss';
+}
+
+@import '../layaut/mediaQuerys-whatsapp.scss';

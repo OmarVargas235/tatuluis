@@ -9,9 +9,12 @@ const Navbar = () => {
 	const [disabledMenu, setDisabledMenu] = useState(true);
 
 	useEffect(() => {
+
 		let scrollPrev = 0;
 
 		function scroll() {
+			/*Esta logica es la que hace que el menu se oculte o se muestre dependiendo de la 
+			direccion del scroll*/
 			setScrollTop(window.scrollY > scrollPrev);
 			scrollPrev = window.scrollY;
 			setActiveMenuChangeColor(window.scrollY > 0);
@@ -24,6 +27,7 @@ const Navbar = () => {
 
 	const controllersActiveMenu = () => {
 		setActiveMenu(!activeMenu);
+		// Cambia el color de la barra de navegacion.
 		setActiveMenuChangeColor(window.scrollY > 0 ? true : !activeMenu);
 		setDisabledMenu(false);
 	}

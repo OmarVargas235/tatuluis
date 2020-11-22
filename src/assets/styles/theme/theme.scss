@@ -98,13 +98,13 @@
 		color: #D37DFF;
 	}
 
-	/***************Icono de whatsapp***************/
-	.icon-whatsapp {
+	/***************Boton de whatsapp***************/
+	.btn-icon-whatsapp {
 		background-color: #121212;
 	}
 
-	/***************Modal de whatsapp***************/
-	.icon-whatsapps {
+	/***************Modal del boton de whatsapp***************/
+	.container_modal_whatsapp {
 	
 		p {
 			color: white;
@@ -160,17 +160,20 @@
 
 	/***************Navbar***************/
 	.navbar {
-		background-color: #202020;
 		box-shadow: none;
-
 	}
+
 	.navbar-brand {
 		fill: #FFFFFF;
 	}
 
 	.navbar-nav {
 		background-color: #121212;
-		
+	}
+
+	.menuActive {
+		background-color: #202020;
+
 		.nav-link {
 			color: #AAAAAA !important;
 		}
@@ -180,7 +183,7 @@
 	
 	@media (min-width: 992px) {
 		.navbar-nav {
-			background-color: #202020;
+			background-color: transparent;
 		}
 	}
 }

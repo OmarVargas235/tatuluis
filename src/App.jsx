@@ -13,7 +13,7 @@ import WhyWithUsPage from './components/why_with_us/WhyWithUsPage';
 import AboutTatuluisPage from './components/about_tatuluis/AboutTatuluisPage';
 import ClientsSayPage from './components/clients_say/ClientsSayPage';
 import ContactUs from './components/contactUs/ContactUs';
-import Whatsapp from './components/btn-whatsapp/Whatsapp';
+import Whatsapp from './components/btn-whatsapp/';
 
 const App = () => (
 	<React.Fragment>

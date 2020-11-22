@@ -1,0 +1,11 @@
+.btn {
+	@extend %btn_navbar;
+
+	&:hover {
+		color: white;
+	}
+
+	&:focus {
+		box-shadow: none;
+	}
+}

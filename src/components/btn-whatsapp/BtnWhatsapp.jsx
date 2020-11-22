@@ -1,10 +1,10 @@
 import React from 'react';
 import { ReactComponent as IconWhatsapp } from '../../assets/iconos/whatsapp.svg';
 
-const BtnWhatsapp = ({ setOpen, open, setCloseInit }) => (
+const BtnWhatsapp = ({ openOrClose_ModalWhatsapp }) => (
 	<div 
-		className="icon-whatsapp d-flex justify-content-center align-items-center rounded-circle"
-		onClick={() => { setOpen(!open); setCloseInit(false) }}
+		className="btn-icon-whatsapp d-flex justify-content-center align-items-center rounded-circle"
+		onClick={openOrClose_ModalWhatsapp}
 	>
 		<IconWhatsapp /> 
 	</div>

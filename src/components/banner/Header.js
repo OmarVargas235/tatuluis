@@ -25,7 +25,7 @@ const Header = ({ pauseAndPlayRef, overlayRef }) => {
 		  visibilityChange = "webkitvisibilitychange";
 		}
 		
-		// Si la página está oculta, pausa el video y le agrega un opacity de cero.
+		// Si la página está en un segundo plano, pausa el video y le agrega un opacity de cero.
 		function handleVisibilityChange() {
 		  if (document[hidden]) {
 		  	isHidden = true;

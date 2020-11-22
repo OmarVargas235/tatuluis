@@ -1,0 +1,27 @@
+@mixin postions($pos, $top, $w) {
+	position: $pos;
+	top: $top;
+	width: $w;
+}
+
+@mixin grid_basic($px, $fr) {
+	display: grid;
+	grid-gap: $px;
+	grid-template-columns: $fr;
+}
+
+@mixin modal($color) {
+	background-color: rgba(0, 0, 0, .6);
+	color: $color;
+	border-radius: 0 !important;
+}
+
+@mixin btn_whatsapp-positions($p, $z, $r, $b, $w, $h, $box) {
+	position: $p;
+	z-index: $z;
+	right: $r;
+	bottom: $b;
+	width: $w;
+	height: $h;
+	box-shadow: $box;
+}

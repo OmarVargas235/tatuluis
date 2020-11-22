@@ -1,50 +1,19 @@
+@import '../layaut/icons_navbar.scss';
+
 .navbar {
 	transition: background-color .5s, transform .5s;
 	position: fixed !important;
-	z-index: 1;
 
-	.bars_close {
-		cursor: pointer;
+	&.fixed-top {
+		z-index: 4;
 	}
 
-	.btn {
-		color: white;
-		font-size: 1.7rem;
-		font-weight: bold;
-		transition: color 1s;
-
-		&:hover {
-			color: white;
-		}
-
-		&:focus {
-			box-shadow: none;
-		}
-	}
-
-	svg {
-		transition: fill .5s;
-	}
-}
-
-.menuActive {
-	background-color: #F6F6F6;
-	box-shadow: 0 1px 1px #D6D6D6;
-
-	.btn {
-		color: black !important;
-	}
-
-	svg {
-		fill: black;
-	}
+	@import '../layaut/btn_navbar.scss';
 }
 
 .links {
 	background-color: white;
-	position: fixed;
-	top: 80px;
-	width: 100%;
+	@include postions(fixed, 80px, 100%);
 
 	.navbar-nav {
 		transition: height .5s;
@@ -73,8 +42,7 @@
 
 	.links {
 		background-color: transparent;
-		position: relative;
-		top: 0;
+		@include postions(relative, 0, null);
 
 		&.animate__slideOutLeft {
   			-webkit-animation-name: none;
